@@ -20,11 +20,9 @@ export function Header({ onHandleOpenNewSendMailModal }: HeaderProps) {
           <span>Estudante e apaixonado por tecnologia, focado em desenvolvimento Front-end</span>
         </div>
         <div className="computer-image">
-          <img src={webImage} alt="Imagem Computador" data-aos="fade-left" />
+          <img src={webImage} alt="Imagem Computador"/>
         </div>
-
       </div>
     </header>
-
-  )
+  );
 }

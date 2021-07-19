@@ -1,16 +1,23 @@
 #header {
   background: #f7f4f4;
-  width: 100%;
   height: 800px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   .navigation {
-    width: 1500px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 32px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 
     img {
       width: 50px;
@@ -40,12 +47,25 @@
   }
 
   .content {
-    width: 1500px;
+    width: 100%;
+    max-width: 1400px;
     height: 700px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+
+    img {
+      margin: 0 auto;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
 
     .hello-world {
       display: flex;
@@ -53,6 +73,8 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      max-width: 1200px;
+      
 
       h1 {
         font-family: 'Rajdhani', sans-serif;
@@ -62,27 +84,12 @@
       }
 
       span {
-        width: 63.5ch;
+        width: 100%;
+        max-width: 1200;
         font-size: 1rem;
         font-weight: 500;
         color: #393838;
 
-        animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 3px solid;
-
-        @keyframes typing {
-          from {
-            width: 0;
-          }
-        }
-
-        @keyframes blink {
-          50% {
-            border-color: transparent;
-          }
-        }
       }
     }
 
@@ -90,6 +97,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      max-width: 1200px;
+      width: 100%;
     }
   }
 }

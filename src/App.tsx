@@ -26,16 +26,16 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <>
       <Header onHandleOpenNewSendMailModal={handleOpenNewSendMailModal}/>
       <Main />
-      <ScrollToTopButton />
       <ToastContainer />
+      <ScrollToTopButton />
       <SendMail 
         isOpen={isNewSendMailModalOpen}
         onRequestClose={handleCloseNewSendMailModal}
       />
-    </div>
+    </>
   );
 }
 

@@ -4,6 +4,8 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 100%;
+  
 
   > a {
     margin-top: 5rem;
@@ -46,12 +48,25 @@
   }
 
   .cards {
-    margin-top: 5rem;
+    margin-top: 5rem auto;
     width: 100%;
-    width: 1400px;
+    max-width: 1400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+
+    }
+    
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
 
     .primary-card {
       width: 100%;
@@ -60,6 +75,7 @@
       background: url(../assets/images/flappy.gif);
       color: #fff;
       border-radius: 1rem;
+      
 
       display: flex;
       align-items: center;
@@ -84,6 +100,7 @@
           opacity: 1;
           border-radius: 1rem;
           padding: 0 1rem;
+          overflow: hidden;
 
           display: flex;
           flex-direction: column;
@@ -147,6 +164,7 @@
           height: 100%;
           opacity: 1;
           padding: 0 1rem;
+          overflow: hidden;
 
           display: flex;
           flex-direction: column;
@@ -195,6 +213,7 @@
       background-repeat: no-repeat;
       background-size: cover;
 
+
       div {
         opacity: 0;
       }
@@ -210,6 +229,7 @@
           height: 100%;
           opacity: 1;
           padding: 0 1rem;
+          overflow: hidden;
 
           display: flex;
           flex-direction: column;
