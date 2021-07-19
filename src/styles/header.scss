@@ -9,9 +9,9 @@
   align-items: center;
   flex-direction: column;
 
-    @media only screen and (max-device-width: 400px) {
-      width: 400px;
-    }
+  @media only screen and (max-device-width: 400px) {
+    width: 400px;
+  }
 
   .navigation {
     width: 100%;
@@ -21,7 +21,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
 
     img {
       width: 50px;
@@ -30,22 +29,39 @@
       align-self: flex-start;
     }
 
-    button {
-      border-radius: 9999px;
-      width: 8rem;
-      height: 2rem;
-      background: transparent;
-      color: #393838;
-      border: 1px solid #393838;
-      cursor: pointer;
-      font-weight: 500;
-      outline: none;
+    .buttons {
 
-      transition: 0.2s;
+      display: flex;
+      align-items: center;
 
-      &:hover {
-        background: #393838;
-        color: #fff;
+      a {
+        text-decoration: none;
+        margin-right: 1rem;
+        color: #393838;
+
+        transition: filter 0.2s;
+
+        &:hover {
+          filter: brightness(0.4);
+        }
+      }
+      button {
+        border-radius: 9999px;
+        width: 8rem;
+        height: 2rem;
+        background: transparent;
+        color: #393838;
+        border: 1px solid #393838;
+        cursor: pointer;
+        font-weight: 500;
+        outline: none;
+
+        transition: 0.2s;
+
+        &:hover {
+          background: #393838;
+          color: #fff;
+        }
       }
     }
   }
@@ -78,10 +94,9 @@
       align-items: center;
       text-align: center;
       max-width: 1200px;
-      
 
       h1 {
-        font-family: 'Rajdhani', sans-serif;
+        font-family: "Rajdhani", sans-serif;
         font-size: 4rem;
         font-weight: 600;
         color: #393838;
@@ -93,7 +108,6 @@
         font-size: 1rem;
         font-weight: 500;
         color: #393838;
-
       }
     }
 
