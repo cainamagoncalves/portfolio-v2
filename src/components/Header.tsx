@@ -14,7 +14,7 @@ export function Header({ onHandleOpenNewSendMailModal }: HeaderProps) {
       <div className="navigation">
         <img src={perfilPhoto} alt="Foto de perfil" />
         <div className="buttons">
-          <a href="images/cv.pdf" download>Baixar Cv</a>
+          <a href="https://drive.google.com/file/d/1hAO-WbejnmedbC2mPzeTS37i55d7ejjZ/view" target="blank">Baixar Cv</a>
           <button onClick={onHandleOpenNewSendMailModal}>Fale comigo</button>
         </div>
       </div>
