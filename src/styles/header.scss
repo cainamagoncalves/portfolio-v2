@@ -9,6 +9,10 @@
   align-items: center;
   flex-direction: column;
 
+    @media only screen and (max-device-width: 400px) {
+      width: 400px;
+    }
+
   .navigation {
     width: 100%;
     max-width: 1400px;

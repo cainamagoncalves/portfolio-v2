@@ -10,6 +10,10 @@
   color: #fff;
   height: 350px;
 
+  @media only screen and (max-device-width: 400px) {
+    width: 400px;
+  }
+
   .content {
     margin-top: 4rem;
     display: flex;
