@@ -12,8 +12,8 @@ export function Main() {
         <h2>Seja bem vindo, é um prazer conhecer você!</h2>
         <p>
           Comecei minha jornada no desenvolvimento web em 2020, quando conheci o Javascript. Desde então,
-          decidi me aperfeiçoar na linguagem, conhecendo e estudando contextos e ferramentas relacionadas à
-          stack. Após ver e experimentar diversas ferramentas, me identifiquei muito com ReactJs, framework no qual
+          decidi me aperfeiçoar na linguagem, conhecendo e estudando contextos e recuros relacionados à
+          stack. Após ver e experimentar diversas ferramentas, me identifiquei muito com ReactJs, biblioteca na qual
           estou me aperfeiçoando no momento.
         </p>
       </div>
